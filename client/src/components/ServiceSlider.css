@@ -1,0 +1,118 @@
+/* src/components/ServiceSlider.css */
+
+/* Base styles */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto 0; /* Add space from the top */
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-right: 1px;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 20px;
+}
+
+.slider-item {
+  
+  flex: 1 1 250px; /* Flex grow, flex shrink, flex basis */
+  box-sizing: border-box;
+  position: relative;
+  max-width: calc(33.33% - 20px); /* Adjust for gap */
+}
+
+.slider-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff; /* Ensure text color is white */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);  /* Shadow effect */
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.slider-caption h3 {
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.slider-caption p {
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.slider-button.prev {
+  left: 15px;
+}
+
+.slider-button.next {
+  right: 15px;
+}
+
+.slider-button:hover {
+  background: rgba(26, 26, 26, 0.9);
+}
+
+.slider-indicators {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator.active,
+.indicator:hover {
+  background-color: #1a1a1a;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .slider-item {
+    max-width: calc(50% - 20px); /* 2 items per row for screens smaller than 768px */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slider-item {
+    max-width: calc(100% - 20px); /* 1 item per row for screens smaller than 576px */
+  }
+}

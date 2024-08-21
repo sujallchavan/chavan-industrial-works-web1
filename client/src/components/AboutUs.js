@@ -7,7 +7,7 @@ const AboutUs = () => {
       <div className="about-us-text">
         <h2>About Us</h2>
         <p>
-          We, Star1 Fabrication Works, situated at Malad West, Mumbai,
+          We, Star1 Fabrication Workss, situated at Malad West, Mumbai,
           Maharashtra have highly sophisticated fabrication unit setup for all
           kinds of fabrication services. Our skilled and trained team is always
           ready to help you with fabrication and related services. Company’s

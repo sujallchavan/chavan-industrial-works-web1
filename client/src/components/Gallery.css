@@ -30,6 +30,15 @@
   .gallery-item {
     width: calc(100% - 20px); /* Set to 100% for mobile */
   }
+
+  .gallery-section {
+    text-align: center;
+    margin: 40px 0;
+    padding-left: 20px; /* Adjust padding for responsiveness */
+    padding-right: 20px; /* Adjust padding for responsiveness */
+    font-size: 1.7em;
+  }
+
 }
 
 .gallery-item img {

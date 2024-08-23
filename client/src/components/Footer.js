@@ -31,16 +31,16 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/sujalchavan1018">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/sujalchavan1018">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/sujalchavan1018">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/sujalchavan1018">
               <i className="fab fa-instagram"></i>
             </a>
           </div>

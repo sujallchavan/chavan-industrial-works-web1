@@ -4,4 +4,4 @@
   command = "npm run build"
 
 [context.production.environment]
-  NODE_VERSION = "14.x"
+  NODE_VERSION = "14.17.6"

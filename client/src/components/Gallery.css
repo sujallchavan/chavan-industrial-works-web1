@@ -1,5 +1,3 @@
-/* src/components/Gallery.css */
-
 .gallery-section {
   text-align: center;
   margin: 40px 0;
@@ -17,7 +15,49 @@
 
 .gallery-item {
   width: calc(33.33% - 20px); /* Initially set to 33.33% for desktop */
-  /* margin-bottom: 20px; Adjust margin for spacing */
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom */
+  align-items: flex-start; /* Align text to the left */
+  padding: 10px; /* Add some padding for text */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)); /* Dark to light gradient */
+  color: #fff; /* White text color */
+  border-radius: 9px;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Retain opacity transition for the overlay */
+}
+
+.image-wrapper:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.image-overlay h3 { /* Title styles */
+  font-size: 0.8em; /* Increased font size for the title */
+  font-weight: bold; /* Make title bold */
+  margin: 1; /* Remove default margin */ /* Add shadow for better contrast */
+  color: #f2eaea;
+  margin-left: 20px;
+}
+
+.image-overlay p { /* Description styles */
+  font-size: 0.5em; /* Smaller font size for the description */
+  margin: 0px 0 0; /* Add margin for spacing */
+  /* Add shadow for better contrast */
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -39,6 +79,10 @@
     font-size: 1.7em;
   }
 
+  .image-overlay h3, /* Smaller headline */
+  .image-overlay p { /* Smaller description */
+    font-size: 0.9em; /* Make text smaller for mobile */
+  }
 }
 
 .gallery-item img {
@@ -46,6 +90,10 @@
   height: 390px; /* Set a fixed height */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px;
+}
+
+.image-wrapper:hover img {
+  /* Removed the scale effect */
 }
 
 .view-more-button {

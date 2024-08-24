@@ -9,24 +9,27 @@ const Footer = () => {
         <div className="footer-section">
           <h3>About Us</h3>
           <p>
-            We are a leading company in welding and cutting services, providing
-            high-quality solutions to our clients.
+            We are the shop who bulid a the good <br></br>desgin door and gates
+            with safty and innovation
           </p>
         </div>
         <div className="footer-section" id="Services">
           <h3>Services</h3>
           <ul>
-            <li>Mig Welding</li>
-            <li>Stud Welding</li>
-            <li>Spot Welding</li>
-            <li>Water Jet Cutting</li>
+            <li>Safty Gate</li>
+            <li>Iron windows</li>
+            <li>Iron Stairs</li>
+            <li>Plumbing</li>
           </ul>
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: contact@company.com</p>
-          <p>Phone: +123 456 7890</p>
-          <p>Address: 123 Welding St., Industrial Area, City, Country</p>
+          <p>Email: balasahebchavan1018@gmail.com</p>
+          <p>Phone: +91 9850055949</p>
+          <p>
+            Address: Opposite Shradha Hospital, Sinnar Shivjai Chowak, Sinnar,
+            India
+          </p>
         </div>
         <div className="footer-section">
           <h3>Follow Us</h3>

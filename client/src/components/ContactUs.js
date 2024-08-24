@@ -54,19 +54,19 @@ const ContactUs = () => {
           <i className="fas fa-map-marker-alt"></i>
           <h3>Our Office Address</h3>
           <p>
-            Palm Court Bldg M, 501/B, 5th Floor, New Link Road, Beside Goregaon
-            Sports Complex, Malad West, Mumbai, Maharashtra 400064
+            Raja fateshgh road, opposite to sradha hospital, Khadakpura, Sinnar,
+            Maharashtra 422103
           </p>
         </div>
         <div className="contact-item">
           <i className="fas fa-envelope"></i>
           <h3>General Enquiries</h3>
-          <p>websupport@justdial.com</p>
+          <p>balasahebchavan1018@gmail.com</p>
         </div>
         <div className="contact-item">
           <i className="fas fa-phone-alt"></i>
           <h3>Call Us</h3>
-          <p>+91-8888888888</p>
+          <p>+91-9850055949</p>
         </div>
         <div className="contact-item">
           <i className="fas fa-clock"></i>

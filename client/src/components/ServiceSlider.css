@@ -54,7 +54,9 @@
 }
 
 .slider-caption p {
+  font-size: 1.2rem;
   color: #ffffff; /* Ensure text color is white */
+  margin-top: -3px;
 }
 
 .slider-button {

@@ -7,13 +7,16 @@ const AboutUs = () => {
       <div className="about-us-text">
         <h2>About Us</h2>
         <p>
-          We, Star1 Fabrication Workss, situated at Malad West, Mumbai,
-          Maharashtra have highly sophisticated fabrication unit setup for all
-          kinds of fabrication services. Our skilled and trained team is always
-          ready to help you with fabrication and related services. Company’s
-          result oriented policies of hard working with first class workmanship
-          and top class quality product with accuracy and precision have
-          attracted and satisfied many reputed corporate clients.
+          Fabrication Shop, located in Sinnar near Nashik, specializes in all
+          types of ironwork, including safety gates, doors, windows, grills, and
+          stairs. Our skilled team is committed to providing high-quality
+          products that are both durable and stylish. <br></br>
+          <br></br>In addition to our ironwork services, we also offer plumbing
+          solutions and hold a government plumbing license. We strive to meet
+          our customers' needs with exceptional craftsmanship and service.
+          <br></br>
+          <br></br>
+          Contact us today to learn more about how we can help you!
         </p>
       </div>
       <div className="about-us-image">

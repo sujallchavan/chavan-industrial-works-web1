@@ -49,15 +49,12 @@
   font-weight: bold; /* Make title bold */
   margin: 1; /* Remove default margin */ /* Add shadow for better contrast */
   color: #f2eaea;
-  margin-left: 20px;
+  margin: 0px 0px 20px 20px;
 }
 
-.image-overlay p { /* Description styles */
-  font-size: 0.5em; /* Smaller font size for the description */
-  margin: 0px 0 0; /* Add margin for spacing */
-  /* Add shadow for better contrast */
-  margin-left: 20px;
-  margin-bottom: 20px;
+.image-overlay p {
+  font-size: .5em;
+  margin: 0px 0px 20px 20px;
 }
 
 @media screen and (max-width: 1024px) {

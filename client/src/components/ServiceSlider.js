@@ -1,4 +1,3 @@
-// src/components/ServiceSlider.js
 import React, { useState, useEffect } from "react";
 import "./ServiceSlider.css";
 
@@ -45,21 +44,21 @@ const ServiceSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleImages, setVisibleImages] = useState([]);
 
-  const updateVisibleImages = () => {
-    const screenWidth = window.innerWidth;
-    let numVisible = 3; // Default to 3 cards
-
-    if (screenWidth <= 768) {
-      numVisible = 2; // 2 cards for tablet
-    }
-    if (screenWidth <= 576) {
-      numVisible = 1; // 1 card for mobile
-    }
-
-    setVisibleImages(images.slice(currentIndex, currentIndex + numVisible));
-  };
-
   useEffect(() => {
+    const updateVisibleImages = () => {
+      const screenWidth = window.innerWidth;
+      let numVisible = 3; // Default to 3 cards
+
+      if (screenWidth <= 768) {
+        numVisible = 2; // 2 cards for tablet
+      }
+      if (screenWidth <= 576) {
+        numVisible = 1; // 1 card for mobile
+      }
+
+      setVisibleImages(images.slice(currentIndex, currentIndex + numVisible));
+    };
+
     updateVisibleImages();
 
     const handleResize = () => {
@@ -70,7 +69,7 @@ const ServiceSlider = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [currentIndex, updateVisibleImages]); // Add updateVisibleImages to the dependency array
+  }, [currentIndex]); // Depend only on currentIndex
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -85,7 +84,7 @@ const ServiceSlider = () => {
   return (
     <div className="slider-container">
       <div className="slider">
-        {visibleImages.map((image, index) => (
+        {visibleImages.map((image) => (
           <div className="slider-item" key={image.id}>
             <img src={image.src} alt={image.title} />
             <div className="slider-caption">

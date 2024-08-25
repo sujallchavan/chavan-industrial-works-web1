@@ -33,7 +33,7 @@
 
 .contact-item i {
   font-size: 2em;
-  color: #ff6b6b;
+  color: #623542;
 }
 
 .contact-item h3 {
@@ -80,7 +80,7 @@
 
 .submit-button {
   padding: 15px 30px;
-  background-color: #ff6b6b;
+  background-color: #623542;
   color: white;
   border: none;
   border-radius: 5px;
@@ -91,7 +91,7 @@
 }
 
 .submit-button:hover {
-  background-color: #e55b5b;
+  background-color: #623542;
 }
 
 .form-block input::placeholder,
@@ -101,7 +101,7 @@
 
 .form-block input:focus,
 .form-block textarea:focus {
-  border-color: #ff6b6b;
+  border-color: #472730;
   outline: none;
 }
 
